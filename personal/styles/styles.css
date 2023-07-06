@@ -115,6 +115,7 @@ body, h1, h4, p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom:20px
   }
+
   
   .card-img {
     max-width: 100%;
@@ -136,7 +137,40 @@ body, h1, h4, p {
     color: black;
 
   }
+  .sketchup-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+  }
   
+  .sketchup {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    justify-self: center; /* Center the image horizontally */
+  }
+  
+  .sketchup_msg {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  
+  .sclass-img,
+  .bouncy-img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .sketchup_msg .images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+
+
 
   footer {
     background-color: #FF6FD2;
@@ -151,11 +185,11 @@ body, h1, h4, p {
   
 
   footer a:hover{
-color: white
+color: pink
   }
   .social img {
     width: 5%;
-    margin-right: 10px;
+    
     
   }
   
@@ -167,4 +201,39 @@ color: white
     text-align: center;
   }
 
+ 
+  form {
+    border: 4px solid pink;
+  }
   
+  /* Add some padding and a grey background color to containers */
+  .container {
+    padding: 20px;
+    background-color: pink;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    
+    box-sizing: border-box;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #3FF3F5;
+    color: black;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
