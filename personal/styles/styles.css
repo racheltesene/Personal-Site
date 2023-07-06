@@ -155,6 +155,8 @@ body, h1, h4, p {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
+    text-align: center;
+    margin: 50px;
   }
   
   .sclass-img,
