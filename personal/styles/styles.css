@@ -28,7 +28,8 @@ body, h1, h4, p {
     margin: 0 auto;
     padding: 20px;
   }
-  
+
+
   
   #navigation {
     margin: 0 auto;
@@ -116,7 +117,7 @@ body, h1, h4, p {
 
   
   .card-img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 10px;
   }
@@ -138,8 +139,7 @@ body, h1, h4, p {
 
   #title-msg{
     font-size: 40px;
-    text-decoration: underline;
-    text-decoration-color: #ffffff;
+    
   }
   .sketchup-grid {
     display: grid;
@@ -224,6 +224,46 @@ text-align: right;
   grid-column: 1/2 ;
 }
 
+.filament-grid{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(5,1fr);
+grid-gap: 20px;
+margin-top: 20px;
+padding: 20px;}
+
+.filament-grid section {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 
+.materials-button a {
+  display: block;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.materials-button a:hover{
+  background-color: #3FF3F5;
+}
+
+
+
+#title2-msg{
+  grid-row: 4/7;
+  text-align: center;
+  font-size: 40px;
+  grid-row: 3/5;
+  -ms-grid-column-span: 100%;
+  
+text-align: center;
+}
+
+
 
   footer {
     background-color: #FF6FD2;
@@ -294,3 +334,6 @@ color: pink
   input[type=submit]:hover {
     opacity: 0.5;
   }
+
+  
+  
